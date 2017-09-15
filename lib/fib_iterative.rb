@@ -14,4 +14,4 @@ def fibI(n)
   end
 end
 
-# puts fibI(9)
+puts fibI(9)

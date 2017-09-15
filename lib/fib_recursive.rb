@@ -8,4 +8,4 @@ def fibR(n)
   end
 end
 
-# puts fibR(9)
+puts fibR(9)
