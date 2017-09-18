@@ -14,4 +14,11 @@ def fibI(n)
   end
 end
 
-puts fibI(9)
+puts fibI(35)
+
+
+require 'benchmark'
+num = 35
+Benchmark.bm do |x|
+  x.report("iterative_fib")  { fibI(num)  }
+end

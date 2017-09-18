@@ -8,4 +8,11 @@ def fibR(n)
   end
 end
 
-puts fibR(9)
+puts fibR(35)
+
+
+require 'benchmark'
+num = 35
+Benchmark.bm do |x|
+  x.report("recursive_fib") { fibR(num) }
+end
