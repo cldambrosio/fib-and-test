@@ -1,16 +1,14 @@
 module Fib
 
-  def fibR(n)
-    if n == 0
-      0
-    elsif n == 1
-      1
+  def self.fibR(n)
+    if n == 0 || n == 1
+      return n
     else
       fibR(n-2) + fibR(n-1)
     end
   end
 
-  def fibI(n)
+  def self.fibI(n)
     if n == 0 || n == 1
       return n
     else
@@ -28,5 +26,5 @@ module Fib
 
 end
 
-# puts fibR(9)
-# puts fibI(9)
+# puts Fib.fibR(9)
+# puts Fib.fibI(9)
