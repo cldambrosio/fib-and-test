@@ -28,3 +28,10 @@ end
 
 # puts Fib.fibR(9)
 # puts Fib.fibI(9)
+
+require 'benchmark'
+num = 35
+Benchmark.bm do |x|
+  x.report("iterative_fib")  { Fib.fibI(num) }
+  x.report("recursive_fib") { Fib.fibR(num) }
+end

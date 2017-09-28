@@ -7,15 +7,15 @@ Cheat Sheet: steps to SET UP THE TESTS for raw ruby with RSpec.
 2. Create a Gemfile `touch Gemfile`
 
 3. Add Rspec gem:
+```
+source 'https://rubygems.org'
 
-`source 'https://rubygems.org'`
+group :development, :test do
 
-`group :development, :test do`
-
-    gem 'rspec'
+  gem 'rspec'
   
-`end`
- 
+end
+``` 
  then `bundle install` then `bundle exec rspec --init`
  
  4. Create a folder to store code `mkdir lib` then `cd lib`
