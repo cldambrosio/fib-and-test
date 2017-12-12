@@ -1,3 +1,5 @@
+This is a personal repo created when studying algorithms.
+
 # fib-and-test
 
 Cheat Sheet: steps to SET UP THE TESTS for raw ruby with RSpec.
